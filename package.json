@@ -1,6 +1,6 @@
 {
   "name": "@markgarrigan/ls",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simplified local storage state history.",
   "main": "index.js",
   "type": "module",
