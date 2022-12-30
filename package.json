@@ -2,7 +2,6 @@
   "name": "@markgarrigan/ls",
   "version": "0.0.1",
   "description": "Simplified local storage state history.",
-  "source": "src/index.js",
   "main": "index.js",
   "type": "module",
   "scripts": {
