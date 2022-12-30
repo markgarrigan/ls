@@ -1,7 +1,6 @@
-import '@markgarrigan/deepdiff'
+import deepdiff from '@markgarrigan/deepdiff'
 
 const MAX_SIZE = 4500000
-
 const event = new Event('stateChange');
 
 function ls() {
@@ -32,7 +31,7 @@ export default {
       ...oldState,
       ...obj
     }
-    const diff = deepDiff(oldState, newState)
+    const diff = deepdiff(oldState, newState)
     if (Object.keys(diff).length !== 0) {
       const state = ls()
       state.unshift(newState)
@@ -49,6 +48,6 @@ export default {
   diff(index1, index2) {
     const state1 = this.get(index1)
     const state2 = this.get(index2)
-    return deepDiff(state1, state2)
+    return deepdiff(state1, state2)
   }
 }
